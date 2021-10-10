@@ -10,7 +10,10 @@ def calculator(x, y, op):
         elif op == "**":
             result = int(x) ** int(y) 
         elif op == "/":
-            result = int(x) / int(y)
+            if y != 0:
+                result = int(x) / int(y)
+            else:
+                return False
         elif op == "//":
             result = int(x) // int(y) 
         return result
