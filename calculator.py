@@ -18,12 +18,12 @@ def calculator(x, y, op):
         return False
 
 def parse_input():
-    raw = input("Enter equation:")
+    raw = input()
     lis = []
     split1 = raw.split(" ")
     for i in split1:
         lis.append(i)
-    calculator(int(lis[0]), int(lis[2]), lis[1])
+    calculator(int(lis[2]), int(lis[4]), lis[3])
     
 
 
