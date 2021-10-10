@@ -23,7 +23,7 @@ def parse_input():
     split1 = raw.split(" ")
     for i in split1:
         lis.append(i)
-    print(calculator(int(lis[0]), int(lis[2]), lis[1]))
+    calculator(int(lis[0]), int(lis[2]), lis[1])
     
 
 
