@@ -5,5 +5,4 @@ def calculate_time(func):
     func()
     end_time = time.time()
     run = end_time - start_time
-    print("Total time " + run)
-
+    print(f'Total time {run}')
