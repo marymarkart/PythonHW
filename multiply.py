@@ -32,9 +32,7 @@ def multiply_list(list):
     """
     product = 1
     for x in list:
-        if isinstance(x, int):
-            product*=x
-        elif isinstance(x, float):
+        if isinstance(x, int) or isinstance(x, float):
             product*=x
         else:
             return False
