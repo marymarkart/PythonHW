@@ -31,7 +31,7 @@ def calculator(x, y, op):
 
     """
     result = 0
-    if x.isdigit() and y.isdigit():
+    if (isinstance(x, int) or isinstance(x, float)) and (isinstance(y, int) or isinstance(y, float)):
         if op == "+":
             result = int(x) + int(y)
         elif op == "-":
