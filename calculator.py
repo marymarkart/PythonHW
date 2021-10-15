@@ -1,6 +1,6 @@
 def calculator(x, y, op):
     result = 0
-    if (isinstance(x, int) or isinstance(x, float)) and (isinstance(y, int) or isinstance(y, float)):
+    if x.isdigit() and y.isdigit():
         if op == "+":
             result = int(x) + int(y)
         elif op == "-":
@@ -23,4 +23,4 @@ def calculator(x, y, op):
 def parse_input():
     raw = input()
     split1 = raw.split(" ")
-    calculator(int(split1[2]), int(split1[4]), split1[3])
+    calculator(split1[2], split1[4], split1[3])
